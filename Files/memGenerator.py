@@ -23,7 +23,7 @@ for i in range(num_files):
     with open(src_path, "w") as file:
         for j in range(num_values):
             value = 0
-            if not j in [0, 1, 8190, 8991]:
+            if not j in [0, 1, 8190, 8191]:
                 value = random.randint(0, 0xFFFF)
             file.write(f"{value:04X}\n")
 

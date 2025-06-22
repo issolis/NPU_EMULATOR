@@ -93,6 +93,8 @@ try:
                 continue  # Sigue esperando hasta recibir todo
 
             hex_str = f"{int.from_bytes(byte, 'little'):02X}"
+            
+
             f.write(hex_str)
 
             received_bytes += 1
